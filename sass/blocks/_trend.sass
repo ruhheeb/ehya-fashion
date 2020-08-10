@@ -1,0 +1,106 @@
+.trend
+  padding: 30px 0
+  &__head
+    display: flex
+    justify-content: space-between
+    margin-bottom: 48px
+  &__wrapper
+  &-tabs
+    &__trigger
+      padding: 0
+      display: flex
+      justify-content: space-between
+      align-content: end
+      width: 366px
+      list-style: none
+    &__item
+      font-style: normal
+      font-weight: 700
+      font-size: 18px
+      line-height: 25px
+      color: $text-color
+      cursor: pointer
+    &__item
+      &--active
+        color: $primary-color
+    &__content
+      display: grid
+      grid-template-rows: 1fr 1fr
+      grid-template-columns: repeat(4, 1fr)
+      grid-row-gap: 50px
+      grid-column-gap: 30px
+      width: 1148px
+      height: 924px
+      display: none
+      &--active
+        display: block
+        display: grid
+        grid-template-rows: 1fr 1fr
+        grid-template-columns: repeat(4, 1fr)
+        grid-row-gap: 50px
+        grid-column-gap: 30px
+        width: 1148px
+        height: 924px
+  &__title
+    margin: 0
+    font-family: 'HK Grotesk', sans-serif
+    font-style: normal
+    font-weight: 700
+    font-size: 48px
+    line-height: 60px
+    color: $primary-color
+  &-item
+    width: 260px
+    height: 441px
+  &-item
+    &__wrap
+      margin-bottom: 20px
+      width: 260px
+      height: 350px
+      border-radius: 8px
+      overflow: hidden
+    &__image
+      width: 100%
+      height: 100%
+    &__offer
+      padding: 0 10px
+    &__title
+      margin: 0
+      margin-bottom: 10px
+      font-family: 'HK Grotesk', sans-serif
+      font-style: normal
+      font-weight: 700
+      font-size: 24px
+      line-height: 32px
+      color: $primary-color
+    &__price
+      display: flex
+      justify-content: space-between
+    &__load
+      display: inline-block
+      margin-bottom: 25px
+      width: 28px
+      height: 37px
+      color: $bg-color-light
+      text-decoration: none
+      cursor: pointer
+      &:focus
+        outlibe: none
+    &__subtitle
+      font-family: 'HK Grotesk', sans-serif
+      font-style: normal
+      font-weight: 700
+      font-size: 24px
+      line-height: 32px
+      color: $bg-color-light
+  &__load
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 0 74px
+    width: 260px
+    height: 350px
+    text-align: center
+    background-color: $btn-color
+    border-radius: 8px

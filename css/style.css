@@ -621,4 +621,142 @@ body {
 .collection__offer {
   padding: 10px 30px 55px;
 }
+
+.trend {
+  padding: 30px 0;
+}
+
+.trend__head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.trend-tabs__trigger {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: end;
+  width: 366px;
+  list-style: none;
+}
+
+.trend-tabs__item {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #5A7184;
+  cursor: pointer;
+}
+
+.trend-tabs__item--active {
+  color: #183B56;
+}
+
+.trend-tabs__content {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 50px;
+  grid-column-gap: 30px;
+  width: 1148px;
+  height: 924px;
+  display: none;
+}
+
+.trend-tabs__content--active {
+  display: block;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 50px;
+  grid-column-gap: 30px;
+  width: 1148px;
+  height: 924px;
+}
+
+.trend__title {
+  margin: 0;
+  font-family: 'HK Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #183B56;
+}
+
+.trend-item {
+  width: 260px;
+  height: 441px;
+}
+
+.trend-item__wrap {
+  margin-bottom: 20px;
+  width: 260px;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.trend-item__image {
+  width: 100%;
+  height: 100%;
+}
+
+.trend-item__offer {
+  padding: 0 10px;
+}
+
+.trend-item__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: 'HK Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #183B56;
+}
+
+.trend-item__price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trend-item__load {
+  display: inline-block;
+  margin-bottom: 25px;
+  width: 28px;
+  height: 37px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.trend-item__load:focus {
+  outlibe: none;
+}
+
+.trend-item__subtitle {
+  font-family: 'HK Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.trend__load {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 74px;
+  width: 260px;
+  height: 350px;
+  text-align: center;
+  background-color: #1565d8;
+  border-radius: 8px;
+}
 /*# sourceMappingURL=style.css.map */
