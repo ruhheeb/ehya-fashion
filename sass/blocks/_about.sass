@@ -1,0 +1,42 @@
+.about
+  padding: 90px 0 50px
+  &-slider
+    &__container
+      padding: 40px 0
+      width: 800px
+      text-align: center
+    &__item
+      display: flex
+      flex-direction: column
+      align-items: center
+      background-color: $bg-color-light
+    &__icon-block
+      margin-bottom: 30px
+      width: 80px
+      height: 70px
+    &__text
+      margin: 0
+      margin-bottom: 28px
+      font-family: 'HK Grotesk', sans-serif
+      font-style: normal
+      font-weight: 400
+      font-size: 20px
+      line-height: 42px
+      color: $text-color
+    &__title
+      margin: 0
+      margin-bottom: 35px
+      font-family: 'HK Grotesk', sans-serif
+      font-style: normal
+      font-weight: 700
+      font-size: 20px
+      line-height: 24px
+      color: $primary-color
+  &__icon
+    object-fit: cover
+.swiper-pagination-bullet
+  width: 5px
+  height: 5px
+  background-color: darken(#B3BAC5, 70%)
+  &-active
+    background-color: $primary-color
