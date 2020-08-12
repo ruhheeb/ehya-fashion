@@ -1,0 +1,112 @@
+.stories
+  padding-bottom: 140px
+.stories-slider
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  border-top: 1px solid #E5EAF4
+  padding-top: 125px
+  // grid-template-rows: 500px
+  &__next
+    background-color: #959EAD
+  &__container
+    width: 652px
+    min-height: 322px
+  &__item
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    padding-top: 121px 0 70px
+    margin: 10px 0 150px
+  &__head
+    width: 392px
+  &__slogan
+    display: inline-block
+    margin-bottom: 28px
+    padding: 6px 16px
+    width: 88px
+    height: 32px
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    text-transform: uppercase
+    background-color: lighten($color-tag, 46%)
+    color: $color-tag
+    border-radius: 2000px
+  &__title
+    margin: 0
+    margin-bottom: 28px
+    font-family: 'HK Grotesk', sans-serif
+    font-style: normal
+    font-weight: 700
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+    color: $primary-color
+  &__text
+    margin: 0
+    margin-bottom: 42px
+    font-style: normal
+    font-weight: 400
+    font-size: 20px
+    line-height: 36px
+    color: $text-color
+  &__cards
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-column-gap: 18px
+    margin-top: 10px
+  &__card-wrapper
+    position: relative
+    max-width: 322px
+  &__card-image
+    width: 312px
+    height: 317px
+    border-radius: 8px 8px 0px 0px
+  &__card-info
+    position: absolute
+    top: 300px
+    right: -10px
+    z-index:
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 20px 20px
+    width: 312px
+    height: 178px
+    background-color: $card-bg-color
+  &__card-tag
+    font-family: 'HK Grotesk', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 22px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: $primary-color
+  &__card-link
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    text-decoration: none
+    color: $btn-color
+    cursor: pointer
+    &:focus
+      outline: none
+  &__button
+    width: 56px
+    height: 56px
+    border-radius: 50%
+    background-color: transparent
+    cursor: pointer
+    &:focus
+      outline: none
+    &--next
+      border: 2px solid $primary-color
+    &--prev
+      border: 2px solid #959EAD
+    // &--active
+    //   border: 2px solid $primary-color
+    &-wrapper
+      display: flex
+      justify-content: space-between
+      width: 132px

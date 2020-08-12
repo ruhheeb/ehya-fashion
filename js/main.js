@@ -11,17 +11,15 @@ $(document).ready(function () {
   });
 
 
-  var mySwiper = new Swiper('.swiper-container', {
+  var aboutSlider = new Swiper('.about-slider__container', {
     // Optional parameters
     // direction: 'horizontal',
     loop: true,
 
     pagination: {
-      el: '.swiper-pagination',
+      el: '.about-slider__pagination',
       clickable: true,
-      // renderBullet: function (index, className) {
-      //   return `<span class="dot swiper-pagination-bullet">${index}</span>`;
-      // },
+
     },
     // Navigation arrows
     // navigation: {
@@ -42,5 +40,31 @@ $(document).ready(function () {
       invert: true,
     },
   })
+
+
+  // Stories slider
+  var storiesSlider = new Swiper('.stories-slider__container', {
+    // Optional parameters
+    // direction: 'horizontal',
+    loop: true,
+
+
+    // },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.stories-slider__button--next',
+      prevEl: '.stories-slider__button--prev',
+    },
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+
+    mousewheel: {
+      invert: true,
+    },
+  })
+
 
 });

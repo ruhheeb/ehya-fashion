@@ -32,6 +32,7 @@
     font-weight: 700
     font-size: 56px
     line-height: 68px
+    letter-spacing: 0.2px
     color: $primary-color
   &__text
     margin: 0
@@ -73,7 +74,7 @@
     margin-right: 8px
     width: 36px
     height: 36px
-    border: 0.75px solid $btn-color
+    border: 0.75px solid lighten($btn-color, 40%)
     border-radius: 12px
   &__icon-dashed
     display: flex
@@ -83,5 +84,10 @@
     width: 22px
     height: 22px
     border: 1px dashed lighten(#000000, 70%)
-  &__link
-    text-decoration: none
+  &__tag
+    font-family: 'HK Grotesk', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 20px
+    color: $primary-color
