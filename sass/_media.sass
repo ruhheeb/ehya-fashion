@@ -92,6 +92,7 @@
 @media (max-width: 992px)
   .container
     max-width: 700px
+    // width: 100%
   .navbar
     &__wrapper
       width: 700px
@@ -112,10 +113,17 @@
       line-height: 32px
 
   .collection
+    padding: 80px 0
     &__wrapper
-      padding: 80px 0
+      // width: 672px
+      width: 100%
+      grid-template-columns: 1fr
+      grid-column-gap: 0
+      justify-content: center
+
     &__image-block
-      width: 672px
+      // width: 672px
+      width: 100%
       height: 490px
       grid-row-gap: 30px
       grid-column-gap: 30px
@@ -132,17 +140,161 @@
       height: 230px
     &__head
       grid-row: 2 / 3
+      padding: 0
 
   .trend
+    padding-bottom: 40px
+    &__head
+      flex-direction: column
+      align-items: center
+    &__title
+      margin-bottom: 25px
     &-tabs
+      width: 600px
+      margin: 0 auto
       &__content
         grid-template-columns: repeat(2, 1fr)
         grid-column-gap: 48px
-        width: 608px
-        justify-self: center
+        width: 600px
+        height: 1908px
+      &__trigger
+        width: 400px
     &-item
       width: 260px
       height: 441px
       &__wrap
         width: 260px
         height: 350px
+    &__load
+      width: 260px
+      height: 350px
+  .about
+    padding: 20px 0 60px
+    &-slider
+      &__container
+        width: 630px
+      &__item
+      &__text
+        width: 630px
+
+  .stories-slider
+    grid-template-columns: 1fr
+    justify-items: center
+    &__head
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-items: center
+      text-align: center
+    &__text
+      width: 510px
+    &__button
+      &-wrapper
+        width: 140px
+        &--mb-3
+          margin-bottom: 36px
+  .footer
+    &__wrapper
+      grid-template-columns: 263px repeat(2, minmax(165px, 1fr))
+    &__company
+      grid-row: 2 / 3
+      grid-column: 2 / 3
+    &__more
+      grid-row: 2 / 3
+      grid-column: 3 / 4
+
+// Responsive 768 px
+@media (max-width: 768px)
+  .container
+    max-width: 660px
+    width: 92%
+  body
+    padding-top: 95px
+  .navbar
+    padding: 33px 0 23px
+
+    &--mobile
+      &_fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 99
+    &__wrapper
+      width: 620px
+    &-menu
+      display: none
+      &__menu-btn
+        display: flex
+  .menu-btn
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 0
+    width: 17px
+    height: 18px
+    background-color: transparent
+    border: none
+    cursor: pointer
+    &:focus
+      outline: none
+    &__line
+      width: 22px
+      height: 2.2px
+      background-color: #3A4C66
+  .mobile-menu
+    &--visible
+      display: block
+      position: absolute
+      top: 25px
+      right: 50px
+
+  .main-display
+    &__wrapper
+      width: 728px
+      background-size: cover
+    &__title
+      margin-bottom: 20px
+      width: 440px
+    &__text
+      margin-bottom: 40px
+      width: 400px
+
+  .collection
+    padding: 70px 0 30px
+  .trend
+    padding: 30px 0 30px
+    &__title
+      margin-bottom: 20px
+    &-tabs
+      &__content
+        grid-column-gap: 48px
+      &__trigger
+        width: 370px
+    &-item
+      width: 280px
+      height: 441px
+      &__wrap
+        width: 280px
+        height: 350px
+      &__offer
+        width: 100%
+
+  .about
+    padding-bottom: 40px
+  .stories
+    padding-bottom: 60px
+    &-slider
+      padding-top: 40px
+      &__title
+        margin-bottom: 20px
+      &__text
+        margin-bottom: 20px
+      &__button-wrapper
+        &--mb-3
+          margin-bottom: 20px
+  .newsletter
+    &-container
+      width: 100%
+  .footer
+    padding: 50px 0 100px

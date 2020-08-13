@@ -21,16 +21,7 @@ $(document).ready(function () {
       clickable: true,
 
     },
-    // Navigation arrows
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
 
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
     keyboard: {
       enabled: true,
       onlyInViewport: false,
@@ -44,12 +35,9 @@ $(document).ready(function () {
 
   // Stories slider
   var storiesSlider = new Swiper('.stories-slider__container', {
-    // Optional parameters
-    // direction: 'horizontal',
+
     loop: true,
 
-
-    // },
     // Navigation arrows
     navigation: {
       nextEl: '.stories-slider__button--next',
@@ -65,6 +53,35 @@ $(document).ready(function () {
       invert: true,
     },
   })
+
+  // var menuBtn = document.querySelector('.menu-btn');
+  // menuBtn.addEventListener('click', function () {
+  //   console.log("working");
+  //   document.querySelector('.mobile-menu').classList.toggle('mobile-menu--visible');
+  // });
+
+  // var closeMobileMenu = document.querySelector('.mobila-menu__close');
+  // closeMobileMenu.addEventListener('click', function () {
+  //   console.log("worknow");
+  // });
+
+  var menuBtn = $('.menu-btn');
+  var mobileMenu = $('.mobile-menu');
+  menuBtn.on('click', function () {
+    mobileMenu.addClass("mobile-menu--visible");
+  });
+
+  var closeMobileMenu = $('.mobile-menu__close');
+  closeMobileMenu.on('click', function (event) {
+    event.preventDefault();
+    mobileMenu.removeClass('mobile-menu--visible');
+  });
+
+  $(document).keyup(function (e) {
+    if (e.key === "Escape" || e.keyCode === 27) {
+      closeMobileMenu.close(e);
+    }
+  });
 
 
 });

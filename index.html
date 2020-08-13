@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header class="navbar">
+  <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar__wrapper">
 
@@ -30,6 +30,37 @@
           <a href="#" class="navbar-menu__button">Get It Now</a>
         </nav>
         <!-- /.navbar-menu -->
+
+        <button class="menu-btn navbar-menu__menu-btn">
+          <span class="menu-btn__line"></span>
+          <span class="menu-btn__line"></span>
+          <span class="menu-btn__line"></span>
+        </button> <!-- /.navbar-menu__menu-btn -->
+
+        <div class="mobile-menu navbar__mobile-menu">
+          <a href="#" class="mobile-menu__close">
+            <img src="img/header/close-icon.svg" alt="Icon: Close" class="mobile-menu__icon">
+          </a>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item mobile-menu__item--mb-2">
+              <a href="" class="mobile-menu__link">Home</a>
+            </li>
+            <li class="mobile-menu__item mobile-menu__item--mb-2">
+              <a href="" class="mobile-menu__link">Landings</a>
+            </li>
+            <li class="mobile-menu__item mobile-menu__item--mb-2">
+              <a href="" class="mobile-menu__link">Pages</a>
+            </li>
+            <li class="mobile-menu__item mobile-menu__item--mb-2">
+              <a href="" class="mobile-menu__link">Docs</a>
+            </li>
+            <li class="mobile-menu__item mobile-menu__item--mb-2">
+              <a href="" class="mobile-menu__link">Help</a>
+            </li>
+          </ul>
+          <a href="#" class="mobile-menu__button">Get it now</a>
+        </div>
+        <!-- /.mobile-menu -->
       </div>
       <!-- /.navbar__wrappr -->
     </div>
@@ -577,8 +608,7 @@
           <p class="stories-slider__text">
             Check our story about fashion for reference and your style. Written by our designer and specialist.
           </p>
-          <div class="stories-slider__button-wrapper">
-
+          <div class="stories-slider__button-wrapper stories-slider__button-wrapper--mb-3">
             <button class="stories-slider__button stories-slider__button--prev">
               <img src="img/stories/icon-prev.svg" alt="Icon: arrow-prev" class="stories-slider__prev-arrow">
             </button>
@@ -588,8 +618,9 @@
               <img src="img/stories/icon-next.svg" alt="Icon: arrow-next" class="stories-slider__next-arrow">
             </button>
           </div>
+          <!-- /.stories-slider__button-wrapper -->
         </div>
-        <!-- /.stories-slider__button-wrapper -->
+
 
         <div class="swiper-container stories-slider__container">
           <!-- Additional required wrapper -->
